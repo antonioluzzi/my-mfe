@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-12">
+    <form-builder #builder [form]="form" (event)="onChange($event)"></form-builder>
+    <div class="well jsonviewer">
+      <pre id="json"><code class="language-json">{{json | json}}</code></pre>
+    </div>
+  </div>
+  <div class="col-md-6 offset-6 pull-right">
+    <button class="btn btn-primary btn-md float-right" (click)="onSubmit()">Submit</button>
+  </div>
+</div>
